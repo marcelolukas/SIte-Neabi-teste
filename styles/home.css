@@ -167,6 +167,26 @@
 
   .cards {
     margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .cards {
+    gap: 20px;
+  }
+
+  .card-item {
+    flex-direction: column;
+  }
+
+  .card-imagem img {
+    width: 100%;
+    height: auto;
+  }
+
+  #btn-pause, #btn-anterior, #btn-proximo{
+    width: 100%;
   }
 }
 

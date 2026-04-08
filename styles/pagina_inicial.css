@@ -312,29 +312,31 @@ img {
   border-top: 3px solid #111111;
 }
 
-.eventos-semana-raizes-negras {
-  width: min(100%, 1200px);
+.eventos-semana-raizes-negras,
+.atividades-destaque-texto,
+.cards-atividades-destaque {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 0px;
   background: rgba(250, 244, 225, 0.95);
+}
+
+.eventos-semana-raizes-negras {
+  padding-top: 0px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-top: solid #111111 3px;
 }
 
 .atividades-destaque-texto {
-  width: min(100%, 1200px);
-  margin: 0 auto;
   padding-top: 20px;
-  background: rgba(250, 244, 225, 0.95);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-top: solid #111111 3px;
 }
+
 .cards-atividades-destaque {
-  width: min(100%, 1200px);
-  margin: 0 auto;
-  background: rgba(250, 244, 225, 0.95);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   height: auto;
@@ -398,7 +400,7 @@ img {
 
 .container-cards-eventos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   width: 100%;
   align-items: stretch;
@@ -429,7 +431,8 @@ img {
 
 .card-imagem-semana-raizes-negras {
   width: 100%;
-  height: clamp(260px, 45vw, 520px); /* altura fluida para telas menores */
+  aspect-ratio: 3 / 4;
+  max-height: 520px;
   padding: 2px 2px 0;
   overflow: hidden; /* IMPORTANTE */
 }
@@ -544,7 +547,8 @@ img {
 .card-imagem-second {
   position: relative;
   width: 100%;
-  height: clamp(220px, 42vw, 440px);
+  aspect-ratio: 3 / 5;
+  max-height: 440px;
   overflow: hidden;
   background: #0f0f0f;
 }
@@ -562,7 +566,7 @@ img {
 .card-imagem-second img,
 .img-segunda {
   width: 100%;
-  height: 440px;
+  height: 100%;
   object-fit: cover;
   transition: transform 320ms ease;
 }
@@ -645,6 +649,7 @@ img {
     right: 20px;
     width: min(85vw, 300px);
   }
+
 }
 
 @media (max-width: 768px) {
@@ -679,6 +684,11 @@ img {
   .atividades-destaque-texto,
   .cards-atividades-destaque {
     width: 100%;
+  }
+
+  .cards-atividades-destaque {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 16px;
   }
 }
 
@@ -717,7 +727,8 @@ img {
   .card-imagem,
   .card-imagem-second,
   .card-imagem-semana-raizes-negras img {
-    height: 220px;
+    height: auto;
+    max-height: 240px;
   }
 
   .card-botao,

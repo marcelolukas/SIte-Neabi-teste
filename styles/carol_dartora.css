@@ -119,6 +119,7 @@ body {
   border-radius: 16px;
   border-top: #000000 4px solid;
   height: auto;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
 }
 
 .carol-container {
@@ -129,8 +130,8 @@ body {
 
 .carol-apresentacao .carol-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(20px, 4vw, 40px);
+  grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1.05fr);
+  gap: clamp(24px, 4vw, 40px);
   align-items: center;
 }
 
@@ -140,6 +141,7 @@ body {
   width: min(100%, 520px);
   aspect-ratio: 3 / 4;
   border-radius: 14px;
+  justify-self: center;
 }
 
 .carol-imagem {
@@ -226,6 +228,7 @@ body {
 
 .carol-texto {
   width: 100%;
+  max-width: 740px;
 }
 .carol-texto h2 {
   color: var(--light-text);
@@ -251,8 +254,8 @@ body {
 
 .carol-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
   margin-top: 32px;
 }
 
@@ -586,6 +589,10 @@ body {
 @media (max-width: 768px) {
   .carol-hero {
     padding: 30px 16px;
+  }
+
+  .carol-apresentacao .carol-container {
+    grid-template-columns: 1fr;
   }
 
   .hero-content h1 {
