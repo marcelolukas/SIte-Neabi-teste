@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conheça a Trajetória</title>
+
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/transicao.css" />
+    <link rel="stylesheet" href="../styles/conheca_trajetoria.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="div_transicao"></div>
+
+    <header class="cabecalho">
+      <div class="identidade_do_site">
+        <img class="logo_do_site" src="../assets/ui/logo_do_site.png" alt="Logo do Site" />
+      </div>
+
+      <nav class="navegacao">
+        <ul class="menu-pagina-inicial">
+          <li><a href="pagina_inicial.html">Início</a></li>
+          <li><a href="quem_somos_generico.html">Quem Somos</a></li>
+          <li><a href="ver_todas.html">Mulheres</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+      </nav>
+
+      <a href="#referencias" class="botao-contato">
+        <span class="texto-botao">Fale Conosco</span>
+        <video class="icone-punho" src="../assets/ui/animacao_punho.webm" muted playsinline preload="auto"></video>
+      </a>
+    </header>
+
+    <main class="trajetoria-main">
+      <section class="trajetoria-hero" id="topo">
+        <div class="hero-content">
+          <p class="hero-label">Mulheres Extraordinárias</p>
+          <h1 id="hero-nome">Nome da mulher</h1>
+          <p id="hero-resumo">
+            Pequeno parágrafo introdutório descrevendo o campo de atuação, as marcas de resistência e o legado
+            que esta mulher protagoniza.
+          </p>
+          <div class="hero-actions">
+            <a class="card-botao" href="#biografia">Ler biografia</a>
+            <a class="card-botao secondary" href="ver_todas.html">Ver outras</a>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <strong id="hero-stat1">Décadas</strong>
+              <span>de atuação</span>
+            </div>
+            <div>
+              <strong id="hero-stat2">Legado</strong>
+              <span>registrado</span>
+            </div>
+            <div>
+              <strong id="hero-stat3">Influência</strong>
+              <span>na cultura</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img id="hero-foto" src="../assets/IMG_0260 (1).jpg" alt="Imagem de destaque" />
+          <div class="hero-overlay-card">
+            <p id="hero-overlay-sub">Foto emblemática</p>
+            <strong id="hero-overlay-title">Legenda curta</strong>
+          </div>
+        </div>
+      </section>
+
+      <nav class="trajetoria-subnav" aria-label="Navegação por seções">
+        <a href="#biografia">Biografia</a>
+        <a href="#timeline">Linha do tempo</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#referencias">Referências</a>
+      </nav>
+
+      <section class="secao-trajetoria secao-institucional" id="missao">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-certificate"></i>
+            Contexto institucional
+          </h2>
+          <p class="secao-subtitulo">Blocos prontos para serem reutilizados em cada página de mulher.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card-destaque">
+            <h3>Missão</h3>
+            <p>Resgatar trajetórias da resistência com linguagem acessível e narrativa institucional.</p>
+          </article>
+          <article class="card-destaque">
+            <h3>Abordagem</h3>
+            <p>Unimos pesquisa, arte e educação para apresentar cada mulher em profundidade.</p>
+          </article>
+          <article class="card-destaque">
+            <h3>Legado</h3>
+            <p>Documentamos impactos culturais e sociais que se mantêm vivos até hoje.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao-trajetoria" id="biografia">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-user-circle"></i>
+            Biografia
+          </h2>
+          <p class="secao-subtitulo">Contextualize infância, formação e primeiros passos.</p>
+        </div>
+        <div class="resumo-grid">
+          <div class="resumo-text">
+            <p id="biografia-paragrafo1">
+              Texto com dados familiares, origens geográficas e educação.
+            </p>
+            <p id="biografia-paragrafo2">
+              Texto sobre engajamentos iniciais, deslocamentos e desafios enfrentados.
+            </p>
+          </div>
+          <div class="resumo-stats">
+            <article>
+              <span id="stat-ano">Ano</span>
+              <p>Momento destacado</p>
+            </article>
+            <article>
+              <span id="stat-area">Área</span>
+              <p>Campo de atuação</p>
+            </article>
+            <article>
+              <span id="stat-legado">Legado</span>
+              <p>Resultado mais conhecido</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-trajetoria timeline-section" id="timeline">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-hourglass-start"></i>
+            Linha do tempo
+          </h2>
+        </div>
+        <div class="timeline-grid">
+          <article>
+            <h3>Momento 1</h3>
+            <p>Evento inicial marcante na trajetória.</p>
+          </article>
+          <article>
+            <h3>Momento 2</h3>
+            <p>Conquistas e reconhecimento em outro momento.</p>
+          </article>
+          <article>
+            <h3>Momento 3</h3>
+            <p>Ações transformadoras e participação coletiva.</p>
+          </article>
+          <article>
+            <h3>Momento 4</h3>
+            <p>Legado contemporâneo e homenagens.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao-trajetoria secao-destacada" id="impacto">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-heart"></i>
+            Impacto
+          </h2>
+          <p class="secao-subtitulo">Influência sobre arte, política, educação e comunidades.</p>
+        </div>
+        <div class="resumo-grid">
+          <div class="resumo-text">
+            <p id="impacto-texto">Texto narrando como o legado inspira movimentos e novas lideranças.</p>
+          </div>
+          <div class="resumo-stats">
+            <article>
+              <span>Projetos</span>
+              <p>Iniciativas inspiradas pela trajetória</p>
+            </article>
+            <article>
+              <span>Redes</span>
+              <p>Grupos e coletivos conectados</p>
+            </article>
+            <article>
+              <span>Reconhecimento</span>
+              <p>Prêmios e menções</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-trajetoria galeria-section" id="galeria">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-image"></i>
+            Galeria
+          </h2>
+          <p class="secao-subtitulo">Fotos e documentos representativos.</p>
+        </div>
+        <div class="galeria-grid">
+          <figure>
+            <img src="../assets/IMG_2710.JPG" alt="Registro 1" />
+            <figcaption>Legenda 1</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/IMG_2746.JPG" alt="Registro 2" />
+            <figcaption>Legenda 2</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/IMG_0260 (1).jpg" alt="Registro 3" />
+            <figcaption>Legenda 3</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="secao-trajetoria" id="referencias">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-link"></i>
+            Referências
+          </h2>
+          <p class="secao-subtitulo">Livros, artigos e documentos históricos.</p>
+        </div>
+        <div class="referencias-list">
+          <article class="referencia-item">
+            <h3>Referência 1</h3>
+            <p>Descrição breve e link.</p>
+          </article>
+          <article class="referencia-item">
+            <h3>Referência 2</h3>
+            <p>Descrição breve e link.</p>
+          </article>
+          <article class="referencia-item">
+            <h3>Referência 3</h3>
+            <p>Descrição breve e link.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao-trajetoria secao-relacionados">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-users"></i>
+            Outras mulheres
+          </h2>
+          <p class="secao-subtitulo">Atualize esta seção para destacar as demais 19 páginas.</p>
+        </div>
+        <div class="mulheres-grid" id="veja-tambem">
+          <!-- Cards reutilizáveis -->
+        </div>
+      </section>
+
+      <section class="secao-cta">
+        <div class="cta-box">
+          <h3>Duplique este modelo</h3>
+          <p>Substitua textos, imagens e dados para cada mulher do site.</p>
+          <a href="ver_todas.html" class="cta-button">
+            <i class="fas fa-arrow-right"></i>
+            Ver outras trajetórias
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="../scripts/transicao.js"></script>
+    <script src="../scripts/animacoes.js"></script>
+    <script src="../scripts/dados_perfil.js"></script>
+    <script src="../scripts/perfil.js"></script>
+  </body>
+</html>

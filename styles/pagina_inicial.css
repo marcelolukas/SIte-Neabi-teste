@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+
+/* =========================
+   BASE
+   ========================= */
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(193, 31, 38, 0.12), transparent 28%),
+    radial-gradient(
+      circle at bottom right,
+      rgba(15, 107, 55, 0.12),
+      transparent 24%
+    ),
+    linear-gradient(180deg, #f2e3b0 0%, #ffbb00 100%);
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: clamp(420px, 68vh, 680px);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(11, 11, 11, 0.72) 0%,
+      rgba(11, 11, 11, 0.3) 46%,
+      rgba(11, 11, 11, 0.1) 100%
+    ),
+    radial-gradient(circle at 18% 24%, rgba(193, 31, 38, 0.38), transparent 28%);
+  z-index: 1;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+}
+
+.hero__carousel {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: clamp(28px, 4vw, 56px);
+  transform: translateY(-50%);
+  width: min(88vw, 680px);
+  max-width: calc(100% - 40px);
+  padding: clamp(18px, 3.5vw, 32px);
+  color: #171512;
+  border-top: 10px solid #094a26;
+  border-radius: 24px;
+  background: rgba(250, 244, 225, 0.95);
+  box-shadow: 0 24px 46px rgba(0, 0, 0, 0.18);
+}
+
+.hero__carousel::before {
+  content: "ultimo post";
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  margin-bottom: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #111111;
+  border-radius: 4px;
+}
+
+.hero__carousel h1 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2.8rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.hero__carousel p {
+  max-width: 100ch;
+  margin: 14px 0 0;
+  font-size: clamp(0.8rem, 1.1vw, 0.88rem);
+  line-height: 1.6;
+  color: #433328;
+}
+
+.botao__carousel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  width: min(100%, 340px);
+  margin-top: 20px;
+  padding: 14px 20px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f6b37, #094a26);
+  border-radius: 6px;
+  box-shadow: 0 16px 30px rgba(16, 98, 47, 0.25);
+  transition:
+    transform 220ms ease,
+    filter 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.botao__carousel:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.04);
+  box-shadow: 0 22px 34px rgba(16, 98, 47, 0.32);
+}
+
+.hero__card-delayed {
+  position: absolute;
+  z-index: 2;
+  top: clamp(5px, 1vw, 14px);
+  right: clamp(4px, 1vw, 20px);
+  width: min(90vw, 500px);
+  max-width: calc(100% - 40px);
+  height: clamp(96px, 20vw, 160px);
+  padding: 12px;
+  color: #171512;
+  border-radius: 16px;
+  background: rgba(250, 244, 225, 0.95);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(120%);
+  will-change: transform, opacity;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    visibility 0.6s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__card-delayed.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
+  animation: slideInRight 1.1s ease-out forwards;
+}
+
+.hero__card-delayed.closing {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(120%);
+  pointer-events: none;
+  animation: none;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(130%);
+  }
+  60% {
+    opacity: 0.95;
+    transform: translateX(18%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero__card-delayed .close-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #433328;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.hero__card-delayed .close-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.hero__card-delayed img {
+  width: 48%;
+  height: calc(100% - 15px);
+  border-radius: 8px;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  margin: 2%;
+}
+
+.hero__card-delayed .card-content {
+  width: 60%;
+  padding: 4px;
+  color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__card-delayed h3 {
+  margin: 0 0 0 0px;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+  font-weight: 700;
+  color: #171512;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.hero__card-delayed p {
+  color: #000000;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: #433328;
+}
+
+.hero__card-delayed .card-note {
+  margin-top: 1px;
+  font-size: 0.8rem;
+  color: #1a3f1f;
+  font-weight: 600;
+}
+
+.hero__card-delayed .card-saiba-mais {
+  width: 120px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0f6b37, #094a26);
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 10px 18px rgba(16, 98, 47, 0.25);
+  transition:
+    transform 200ms ease,
+    filter 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.hero__card-delayed .card-saiba-mais:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+  box-shadow: 0 20px 34px rgba(16, 98, 47, 0.32);
+}
+
+/* =========================
+   SECAO DESTAQUE
+   ========================= */
+
+.atividades-destaque {
+  position: relative;
+  padding: clamp(28px, 4vw, 56px);
+  color: white;
+  text-align: center;
+  background: linear-gradient(180deg, #c11f26 0%, #8f131a 100%);
+  border-top: 3px solid #111111;
+}
+
+.eventos-semana-raizes-negras {
+  width: 1650px;
+  margin: 0 auto;
+  padding-top: 0px;
+  background: rgba(250, 244, 225, 0.95);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-top: solid #111111 3px;
+}
+
+.atividades-destaque-texto {
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: rgba(250, 244, 225, 0.95);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-top: solid #111111 3px;
+}
+.cards-atividades-destaque {
+  width: 1400px;
+  height: 760px;
+  margin: 0 auto;
+  background: rgba(250, 244, 225, 0.95);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.eventos-semana-raizes-negras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(26px, 4vw, 38px);
+  border-radius: 20px;
+  border-top: 4px solid #111111;
+  background: rgba(250, 244, 225, 0.95);
+}
+
+.eventos-semana-raizes-negras-titulo,
+.atividades-destaque-texto h2 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  font-weight: 800;
+  line-height: 1.08;
+  color: #111111;
+}
+
+.eventos-semana-raizes-negras-titulo {
+  margin: 0 0 12px;
+}
+
+.atividades-destaque-texto {
+  margin-top: clamp(104px, 5vw, 56px);
+}
+
+.atividades-destaque-texto h2 {
+  margin-bottom: 12px;
+}
+
+.eventos-semana-raizes-negras-descricao,
+.atividades-destaque-texto p {
+  width: min(100%, 760px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 1.6vw, 1.08rem);
+  line-height: 1.8;
+  color: #111111;
+}
+
+.eventos-semana-raizes-negras-descricao {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.atividades-destaque-texto p {
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* =========================
+   GRID DE EVENTOS
+   ========================= */
+
+.container-cards-eventos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.cards-atividades-semana-raizes-negras {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 11, 0.96),
+    rgba(26, 26, 26, 0.94)
+  );
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.cards-atividades-semana-raizes-negras:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 34px rgba(0, 0, 0, 0.24);
+}
+
+.card-imagem-semana-raizes-negras {
+  width: 100%;
+  height: 600px; /* ↓ diminui aqui (antes era 600px) */
+  padding: 2px 2px 0;
+  overflow: hidden; /* IMPORTANTE */
+}
+
+.card-imagem-semana-raizes-negras img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card_conteudo-atividades-semana-raizes-negras {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 14px 18px;
+  color: white;
+  text-align: left;
+}
+
+.card_conteudo-atividades-semana-raizes-negras h2 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+}
+
+.card_conteudo-atividades-semana-raizes-negras p {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.9rem;
+}
+
+.data {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #e0bb4f !important;
+}
+
+.card-botao-semana-raizes-negras {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 110px;
+  margin-top: auto;
+  padding: 10px 14px;
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f6b37, #094a26);
+  border-radius: 14px;
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.card-botao-semana-raizes-negras:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+
+.card-botao-semana-raizes-negras p {
+  color: inherit;
+}
+
+/* =========================
+   CARDS DE DESTAQUE
+   ========================= */
+
+.cards-atividades-destaque {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.cards-atividades {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.96),
+    rgba(24, 24, 24, 0.94)
+  );
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+  height: 700px;
+  width: 600px;
+  
+}
+
+.cards-atividades:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.24);
+}
+
+.container-zoom {
+  display: block;
+}
+
+.card-imagem,
+.card-imagem-second {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  background: #0f0f0f;
+}
+
+.card-imagem::after,
+.card-imagem-second::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 38%;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.18));
+}
+
+.card-imagem img,
+.card-imagem-second img,
+.img-segunda {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  transition: transform 320ms ease;
+}
+
+.cards-atividades:hover .card-imagem img,
+.cards-atividades:hover .card-imagem-second img {
+  transform: scale(1.04);
+}
+
+.card_conteudo-atividades {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 16px 20px;
+}
+
+.card_conteudo-atividades h2 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  text-align: left;
+}
+
+.card_conteudo-atividades p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  text-align: left;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.card-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 130px;
+  margin-top: auto;
+  padding: 10px 18px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f6b37, #094a26);
+  border-radius: 14px;
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.card-botao:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+
+.card-botao p {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero__carousel {
+    width: min(86vw, 500px);
+  }
+
+  .hero__card-delayed {
+    top: 5px;
+    right: 20px;
+    width: min(85vw, 300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 380px;
+  }
+
+  .hero__carousel {
+    left: 50%;
+    top: auto;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: min(84vw, 400px);
+    max-width: calc(100% - 32px);
+    padding: clamp(16px, 3vw, 24px);
+  }
+
+  .botao__carousel {
+    display: flex;
+    width: 100%;
+  }
+
+  .hero__card-delayed {
+    display: none;
+  }
+
+  .atividades-destaque {
+    padding: 24px 16px 34px;
+  }
+
+  .eventos-semana-raizes-negras,
+  .atividades-destaque-texto,
+  .cards-atividades-destaque {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 380px;
+  }
+
+  .hero__carousel {
+    width: calc(100% - 24px);
+    max-width: none;
+    padding: 16px 16px;
+    bottom: 16px;
+    border-radius: 18px;
+    border-top: 8px solid #c11f26;
+  }
+
+  .hero__carousel::before {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+  }
+
+  .hero__carousel h1 {
+    font-size: 2rem;
+  }
+
+  .hero__carousel p {
+    font-size: 0.94rem;
+  }
+
+  .container-cards-eventos,
+  .cards-atividades-destaque {
+    grid-template-columns: 1fr;
+  }
+
+  .card-imagem,
+  .card-imagem-second,
+  .card-imagem-semana-raizes-negras img {
+    height: 220px;
+  }
+
+  .card-botao,
+  .card-botao-semana-raizes-negras {
+    width: 100%;
+  }
+}

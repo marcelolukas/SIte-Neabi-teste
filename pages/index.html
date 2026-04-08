@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Página Inicial</title>
+
+    <link rel="stylesheet" href="../styles/pagina_inicial.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/transicao.css" />
+  </head>
+
+  <body>
+    <div class="div_transicao"></div>
+
+    <header class="cabecalho">
+      <div class="identidade_do_site">
+        <img
+          class="logo_do_site"
+          src="../assets/ui/logo_do_site.png"
+          alt="Logo do Site"
+        />
+      </div>
+
+      <nav class="navegacao">
+        <ul class="menu-pagina-inicial">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="Quem_Somos.html">Quem Somos</a></li>
+          <li><a href="#" class="Projetos">Projetos</a></li>
+          <li><a href="#">Eventos</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="botao-contato">
+        <span class="texto-botao">Fale Conosco</span>
+        <video
+          class="icone-punho"
+          src="../assets/ui/animacao_punho.webm"
+          muted
+          playsinline
+          preload="auto"
+        ></video>
+      </a>
+    </header>
+    <main>
+      <section class="destaques">
+        <div class="texto-principal">
+          <h1 class="titulo">
+            NEABI PROMOVE EXPOSIÇÃO DE MULHERES NEGRAS E INDIGENAS: Vozes negras e indígenas: mulheres extraordinárias que marcaram a
+            história
+          </h1>
+
+          <p>
+            Conheça histórias de mulheres que transformaram a sociedade por meio
+            da resistência, da arte e do conhecimento.
+          </p>
+
+          <a href="ver_todas.html" class="botao">Ver todas</a>
+        </div>
+
+        <div class="cards">
+          <article class="card-item">
+            <div class="card-imagem">
+              <img id="mulher-foto-1" alt="Foto da Mulher" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3 id="mulher-nome-1">Lélia Gonzalez</h3>
+              <p id="mulher-bio-1">Lélia Gonzalez foi uma intelectual...</p>
+              <time id="mulher-tempo-1">1898 — 2026</time>
+            </div>
+          </article>
+
+          <article class="card-item">
+            <div class="card-imagem">
+              <img id="mulher-foto-2" alt="Foto da Mulher" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3 id="mulher-nome-2">Lélia Gonzalez</h3>
+              <p id="mulher-bio-2">Lélia Gonzalez foi uma intelectual...</p>
+              <time id="mulher-tempo-2">1898 — 2026</time>
+            </div>
+          </article>
+
+          <article class="card-item">
+            <div class="card-imagem">
+              <img id="mulher-foto-3" alt="Foto da Mulher" />
+            </div>
+
+            <div class="card-conteudo">
+              <h3 id="mulher-nome-3">Lélia Gonzalez</h3>
+              <p id="mulher-bio-3">Lélia Gonzalez foi uma intelectual...</p>
+              <time id="mulher-tempo-3">1898 — 2026</time>
+            </div>
+          </article>
+
+          <div class="controles">
+            <button id="btn-anterior">Anterior</button>
+            <button id="btn-pause">Pause</button>
+            <button id="btn-proximo">Próximo</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../scripts/mulheres.js"></script>
+    <script src="../scripts/carrosel.js"></script>
+    <script src="../scripts/animacoes.js"></script>
+    <script src="../scripts/transicao.js"></script>
+  </body>
+</html>
