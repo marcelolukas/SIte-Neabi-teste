@@ -30,7 +30,7 @@ body {
 
 .carol-hero {
   position: relative;
-  height: 450px;
+  height: clamp(260px, 45vw, 520px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,7 +585,6 @@ body {
 
 @media (max-width: 768px) {
   .carol-hero {
-    height: 280px;
     padding: 30px 16px;
   }
 
@@ -698,7 +697,6 @@ body {
 
 @media (max-width: 480px) {
   .carol-hero {
-    height: 240px;
     padding: 20px 12px;
   }
 

@@ -3,26 +3,26 @@
 .destaques {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
-  max-width: 85%; /* Limita a largura máxima */
-  margin: 5% auto -0% auto; /* Centraliza horizontalmente e mantém o topo */
-  padding: 0 5%; /* Segurança para não encostar na borda em telas pequenas */
+  gap: clamp(24px, 5vw, 80px);
+  max-width: 1100px;
+  margin: 5% auto 0 auto;
+  padding: 0 clamp(16px, 4vw, 40px);
   align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .texto-principal {
-  flex: 1;
+  flex: 1 1 320px;
   color: #171512;
   line-height: 1.2;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin-left: 0;
   max-width: 60%;
   margin-top: 40px;
   padding: 28px 0;
 }
 .texto-principal .titulo {
-  font-size: 48px;
+  font-size: clamp(32px, 5vw, 48px);
   font-weight: 800;
   line-height: 1.02;
   max-width: 14ch;
@@ -30,26 +30,26 @@
   padding-left: 18px;
 }
 .texto-principal p {
-  font-size: 18px;
+  font-size: clamp(16px, 2.5vw, 18px);
   line-height: 1.5;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 24px;
   font-weight: 400;
 }
 
 .texto-principal .botao {
-  text-decoration: none; /* Tira o sublinhado */
+  text-decoration: none;
   background: linear-gradient(135deg, #0f6b37, #094a26);
   color: white;
-  padding: 13px 32px; /* Como você colocaria os valores de 10px e 20px aqui? */
+  padding: 13px 32px;
   border-radius: 8px;
-  display: inline-block; /* Importante para o padding funcionar bem em links */
-  font-family: Roboto;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
   font-weight: 600;
   font-size: 16px;
-  margin-top: 30px;
-  width: 142x;
-  transition:                /* transições suaves */
+  margin-top: 24px;
+  width: auto;
+  transition:
     background-color 0.4s ease,
     border-color 0.2s ease;
 }
@@ -60,10 +60,10 @@
 }
 
 .cards {
-  flex: 1; /* Ocupa o espaço disponível na largura */
-  display: flex; /* Ativa o flexbox para os cards filhos */
-  flex-direction: column; /* Coloca um card abaixo do outro */
-  gap: 35px; /* O espaço de respiro entre os cards */
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
   background:
     linear-gradient(180deg, #111111 0%, #1d1d1d 100%);
   border-top: 8px solid #c11f26;
@@ -75,7 +75,6 @@
     transform 0.35s ease,
     opacity 0.35s ease;
   transform: translateX(0);
-  
 }
 
 .cards.slide-right {
@@ -153,5 +152,21 @@
   width: 100px;
   height: 29px;
   border-radius: 6px;
+}
+
+@media (max-width: 880px) {
+  .destaques {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .texto-principal {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .cards {
+    margin-left: 0;
+  }
 }
 

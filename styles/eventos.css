@@ -28,7 +28,7 @@
 
 .eventos-hero {
   position: relative;
-  height: 400px;
+  height: clamp(260px, 45vw, 440px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,7 +282,6 @@
   }
 
   .eventos-hero {
-    height: 300px;
     padding: 30px 16px;
   }
 
@@ -330,7 +329,6 @@
   }
 
   .eventos-hero {
-    height: 240px;
     padding: 20px 12px;
   }
 
