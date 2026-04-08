@@ -400,7 +400,7 @@ img {
 
 .container-cards-eventos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   width: 100%;
   align-items: stretch;
@@ -431,10 +431,11 @@ img {
 
 .card-imagem-semana-raizes-negras {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  max-height: 520px;
-  padding: 2px 2px 0;
+  aspect-ratio: 4 / 3;
+  max-height: 360px;
+  padding: 0;
   overflow: hidden; /* IMPORTANTE */
+  border-radius: 10px;
 }
 
 .card-imagem-semana-raizes-negras img {
@@ -654,7 +655,7 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 380px;
+    min-height: 320px;
   }
 
   .hero__carousel {
@@ -687,7 +688,7 @@ img {
   }
 
   .cards-atividades-destaque {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     padding: 16px;
   }
 }
@@ -725,10 +726,18 @@ img {
   }
 
   .card-imagem,
-  .card-imagem-second,
-  .card-imagem-semana-raizes-negras img {
+  .card-imagem-second {
     height: auto;
     max-height: 240px;
+  }
+
+  .card-imagem-semana-raizes-negras {
+    max-height: 240px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-imagem-semana-raizes-negras img {
+    height: 100%;
   }
 
   .card-botao,
