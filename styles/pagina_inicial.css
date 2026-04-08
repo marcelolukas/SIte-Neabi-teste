@@ -313,7 +313,7 @@ img {
 }
 
 .eventos-semana-raizes-negras {
-  width: 1650px;
+  width: min(100%, 1200px);
   margin: 0 auto;
   padding-top: 0px;
   background: rgba(250, 244, 225, 0.95);
@@ -323,7 +323,7 @@ img {
 }
 
 .atividades-destaque-texto {
-  width: 1400px;
+  width: min(100%, 1200px);
   margin: 0 auto;
   padding-top: 20px;
   background: rgba(250, 244, 225, 0.95);
@@ -332,12 +332,12 @@ img {
   border-top: solid #111111 3px;
 }
 .cards-atividades-destaque {
-  width: 1400px;
-  height: 760px;
+  width: min(100%, 1200px);
   margin: 0 auto;
   background: rgba(250, 244, 225, 0.95);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  height: auto;
 }
 .eventos-semana-raizes-negras {
   display: flex;
@@ -363,7 +363,7 @@ img {
 }
 
 .atividades-destaque-texto {
-  margin-top: clamp(104px, 5vw, 56px);
+  margin-top: clamp(32px, 6vw, 56px);
 }
 
 .atividades-destaque-texto h2 {
@@ -398,7 +398,7 @@ img {
 
 .container-cards-eventos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
   width: 100%;
   align-items: stretch;
@@ -429,7 +429,7 @@ img {
 
 .card-imagem-semana-raizes-negras {
   width: 100%;
-  height: 600px; /* ↓ diminui aqui (antes era 600px) */
+  height: clamp(260px, 45vw, 520px); /* altura fluida para telas menores */
   padding: 2px 2px 0;
   overflow: hidden; /* IMPORTANTE */
 }
@@ -508,11 +508,8 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: stretch;
-  padding-left: 100px;
-  padding-bottom: 100px;
-  padding-right: 100px;
-  padding-top: 40px;
-  gap: 20px;
+  padding: clamp(16px, 4vw, 32px);
+  gap: clamp(14px, 3vw, 22px);
 }
 
 .cards-atividades {
@@ -530,9 +527,8 @@ img {
   transition:
     transform 220ms ease,
     box-shadow 220ms ease;
-  height: 700px;
-  width: 600px;
-  
+  min-height: 100%;
+  width: 100%;
 }
 
 .cards-atividades:hover {
@@ -548,7 +544,7 @@ img {
 .card-imagem-second {
   position: relative;
   width: 100%;
-  height: 440px;
+  height: clamp(220px, 42vw, 440px);
   overflow: hidden;
   background: #0f0f0f;
 }
