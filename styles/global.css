@@ -3,7 +3,7 @@
 :root {
   --color-bg: #f4e6b4;
   --color-surface: rgba(244, 230, 180, 0.84);
-  --color-header: #c11f26;
+  --color-header: #B71C1C;;
   --color-text: #171512;
   --color-border: black;
   --color-accent: #0f6b37;
@@ -83,7 +83,7 @@ select {
   align-items: center;
   gap: 20px;
   padding: 16px var(--container-padding);
-  background-color: #c11f26;  
+  background-color: #8B0000;
   border-bottom: 2px solid var(--color-border);
  
 }
@@ -187,7 +187,7 @@ select {
   padding: 0 52px 0 20px;
   overflow: hidden;
   color: #ffffff;
-  background: #158447;
+  background: #2E7D32;
   border: 1.5px solid var(--color-border);
   border-radius: 10px;
   box-shadow:

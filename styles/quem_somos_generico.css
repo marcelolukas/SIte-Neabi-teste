@@ -10,9 +10,12 @@
   --card-bg: rgba(255, 255, 255, 0.95);
 }
 
+body {
+  background-color: black;
+}
 .sobre-extra {
   padding: clamp(32px, 4vw, 56px);
-  background: linear-gradient(180deg, rgba(224, 187, 79, 0.12), transparent 60%);
+  background: linear-gradient(180deg, rgba(255, 191, 0, 0.12), transparent 60%);
 }
 
 .sobre-extra__grid {
@@ -52,11 +55,16 @@
 }
 
 .contato-rodape {
-  margin-top: clamp(32px, 4vw, 48px);
+  margin: clamp(82px, 4vw, 48px);
   padding: clamp(32px, 4vw, 64px);
   background: linear-gradient(135deg, #111, #1a1a1a);
   color: var(--light-text);
+  max-width: 1350px;
+  height: 300px;
   border-top: 4px solid #0f6b37;
+
+  border-radius: 14px;
+  
 }
 
 .contato-rodape__inner {
