@@ -3,7 +3,7 @@
    ================================================== */
 
 :root {
-  --primary-color: #c11f26;
+  --primary-color: #0f6b37;
   --secondary-color: #0f6b37;
   --light-text: #ffffff;
   --muted-text: rgba(23, 21, 18, 0.92);
@@ -11,7 +11,9 @@
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(135deg, #B22222, #8B0000) !important;
+  width: 100%;
+
 }
 .sobre-extra {
   padding: clamp(32px, 4vw, 56px);
@@ -28,11 +30,12 @@ body {
 
 .sobre-extra__item {
   background: var(--card-bg);
-  border-radius: 18px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 24px;
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.12);
-  transition: transform 260ms ease, box-shadow 260ms ease;
+  transition:
+    transform 260ms ease,
+    box-shadow 260ms ease;
 }
 
 .sobre-extra__item:hover {
@@ -55,16 +58,16 @@ body {
 }
 
 .contato-rodape {
-  margin: clamp(82px, 4vw, 48px);
+  margin: clamp(82px, 4vw, 48px) auto;
   padding: clamp(32px, 4vw, 64px);
-  background: linear-gradient(135deg, #111, #1a1a1a);
+  max-width: 1150px;
+  height: 600px;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  background: linear-gradient(135deg, #161616, #1a1a1a);
   color: var(--light-text);
-  max-width: 1350px;
-  height: 300px;
-  border-top: 4px solid #0f6b37;
-
-  border-radius: 14px;
-  
+  border-radius: 38px;
 }
 
 .contato-rodape__inner {
@@ -148,7 +151,9 @@ body {
   color: var(--light-text);
   font-weight: 600;
   font-size: 0.85rem;
-  transition: transform 220ms ease, background 220ms ease;
+  transition:
+    transform 220ms ease,
+    background 220ms ease;
   display: inline-flex;
 }
 

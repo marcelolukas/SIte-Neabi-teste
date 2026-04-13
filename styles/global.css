@@ -40,10 +40,8 @@ body {
   font-family: var(--font-base);
   line-height: 1.5;
   text-rendering: optimizeLegibility;
-  background:
-    radial-gradient(circle at top, rgba(193, 31, 38, 0.12), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(15, 107, 55, 0.12), transparent 24%),
-    linear-gradient(180deg, #f2e3b0 0%, #e5cb86 100%);
+  background: rgba(250, 244, 225, 0.95);
+
 }
 
 img,
@@ -83,9 +81,9 @@ select {
   align-items: center;
   gap: 20px;
   padding: 16px var(--container-padding);
-  background-color: #8B0000;
-  border-bottom: 2px solid var(--color-border);
- 
+  background-color: #B71C1C; /* Preto institucional */
+  color: #FAF4E1; /* Texto em bege claro para máxima legibilidade */
+
 }
 
 .cabecalho::after {

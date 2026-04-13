@@ -15,13 +15,13 @@
    LAYOUT GERAL
    ======================================== */
 body {
-  background: linear-gradient(180deg, #c11f26 0%, #8f131a 100%);
+  background:#f4e6b4;
 }
 .carol-main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #c11f26 0%, #8f131a 100%);
+  background: #f4e6b4;
 }
 
 /* ========================================
@@ -35,7 +35,6 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #c11f26, #8f131a);
   padding: 40px 20px;
   text-align: center;
 }
