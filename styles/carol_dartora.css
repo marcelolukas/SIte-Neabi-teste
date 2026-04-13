@@ -15,13 +15,13 @@
    LAYOUT GERAL
    ======================================== */
 body {
-  background:#f4e6b4;
+  background:#8f131a;
 }
 .carol-main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #f4e6b4;
+  background: #8f131a;
 }
 
 /* ========================================

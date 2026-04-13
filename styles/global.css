@@ -40,8 +40,7 @@ body {
   font-family: var(--font-base);
   line-height: 1.5;
   text-rendering: optimizeLegibility;
-  background: rgba(250, 244, 225, 0.95);
-
+  background: #8f131a;
 }
 
 img,
@@ -81,7 +80,7 @@ select {
   align-items: center;
   gap: 20px;
   padding: 16px var(--container-padding);
-  background-color: #B71C1C; /* Preto institucional */
+  background-color: #8f131a; /* Preto institucional */
   color: #FAF4E1; /* Texto em bege claro para máxima legibilidade */
 
 }
