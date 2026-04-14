@@ -149,7 +149,7 @@ select {
   bottom: 2px;
   width: 100%;
   height: 2px;
-  background: #094a26;
+  background: #0f6b37;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--transition-fast);
@@ -184,7 +184,7 @@ select {
   padding: 0 52px 0 20px;
   overflow: hidden;
   color: #ffffff;
-  background: #2E7D32;
+  background: #0f6b37;
   border: 1.5px solid var(--color-border);
   border-radius: 10px;
   box-shadow:
