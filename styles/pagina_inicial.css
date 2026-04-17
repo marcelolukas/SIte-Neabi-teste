@@ -543,10 +543,7 @@ img {
   margin: 0 auto;
 }
 
-.cards-atividades:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.24);
-}
+
 
 .container-zoom {
   display: block;
@@ -558,8 +555,7 @@ img {
   aspect-ratio: 3 / 5;
   max-height: 205px;
   overflow: hidden;
-  background: #0f0f0f;
-   border: 1px solid rgba(0, 0, 0, 0.253);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
 }
 .card-imagem-second {
@@ -568,8 +564,7 @@ img {
   aspect-ratio: 3 / 5;
   max-height: 340px;
   overflow: hidden;
-  background: #0f0f0f;
-     border: 1px solid rgba(0, 0, 0, 0.253);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
 }
 
@@ -751,7 +746,6 @@ img {
   .card-imagem-second {
     height: auto;
     max-height: 240px;
-       border: 11px solid rgba(0, 0, 0, 0.253);
 
   }
 
