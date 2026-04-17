@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   gap: 30px;
   padding-bottom: 50px;
+  background-color: #8f131a;
 }
 
 .trajetoria-hero {
@@ -133,6 +134,7 @@ body {
   border-radius: 24px;
   padding: clamp(32px, 4vw, 52px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  
 }
 
 .secao-destacada {
@@ -158,8 +160,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 28px;
   margin-top: 24px;
+  text-align: justify;
 }
-
+.secao-trajetoria{
+  background: rgba(255, 255, 255, 0.92);
+}
 .secao-institucional .cards-grid {
   margin-top: 18px;
   display: grid;
@@ -214,17 +219,52 @@ body {
   color: var(--primary-color);
 }
 
-.timeline-grid,
+.timeline-grid{
+    margin-top:10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 55px;
+}
+
+
+.timeline-grid article{
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  width: 120%;
+  padding: 18px;
+ border: 1px solid rgba(193, 31, 38, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.06);
+}
+.timeline-grid h3{
+  margin-top: 0;
+  font-size: 1rem;
+  color: var(--primary-color);
+  
+}
+
+.timeline-grid p{
+  color: var(--text-dark);
+  margin: 0;
+    text-align: justify;
+  line-height: 1.5;
+  hyphens: auto;
+
+}
 .valores-grid,
-.projetos-grid,
-.galeria-grid {
+.projetos-grid {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-.timeline-grid article,
+.galeria-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,2fr));
+  gap: 20px;
+}
+
 .valores-grid article,
 .projetos-grid article {
   background: rgba(255, 255, 255, 0.9);
@@ -234,7 +274,7 @@ body {
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.06);
 }
 
-.timeline-grid h3,
+
 .valores-grid h3,
 .projetos-grid h3 {
   margin-top: 0;

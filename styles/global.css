@@ -80,9 +80,15 @@ select {
   align-items: center;
   gap: 20px;
   padding: 16px var(--container-padding);
-  background-color: #8f131a; /* Preto institucional */
-  color: #FAF4E1; /* Texto em bege claro para máxima legibilidade */
 
+  background-color: #8f131a;
+  color: #FAF4E1;
+
+  /* Remove a linha */
+  border-bottom: none;
+
+  /* Efeito de profundidade */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 .cabecalho::after {
@@ -184,7 +190,7 @@ select {
   padding: 0 52px 0 20px;
   overflow: hidden;
   color: #ffffff;
-  background: #0f6b37;
+  background: #4C864F;
   border: 1.5px solid var(--color-border);
   border-radius: 10px;
   box-shadow:
