@@ -3,7 +3,7 @@
 :root {
   --primary: #c11f26;
   --secondary: #0f6b37;
-  --surface: rgba(255, 255, 255, 0.94);
+  --surface: rgba(250, 244, 225, 0.95);
   --text: #19130f;
   --muted: rgba(25, 19, 15, 0.7);
   --radius: 22px;
@@ -213,8 +213,9 @@
   align-items: center;
   gap: 18px;
   padding: 20px;
-  background: linear-gradient(135deg, rgba(15, 107, 55, 0.1), rgba(193, 31, 38, 0.1));
-  border: 1px solid rgba(193, 31, 38, 0.15);
+  background: var(--surface);
+  border: 1px solid rgba(25, 19, 15, 0.08);
+  border-top: 4px solid var(--primary);
   border-radius: var(--radius);
   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.08);
 }

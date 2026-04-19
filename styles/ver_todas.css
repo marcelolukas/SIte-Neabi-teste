@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* =========================
    BASE
@@ -28,7 +28,7 @@ main {
   border: 1px solid rgba(24, 32, 25, 0.08);
   border-top: 10px solid #c11f26;
   border-radius: 0 0 24px 24px;
-  background: rgba(250, 244, 225, 0.82);
+  background: rgba(250, 244, 225, 0.95);
   box-shadow: 0 18px 45px rgba(68, 43, 12, 0.12);
   backdrop-filter: blur(8px);
 }
@@ -45,7 +45,7 @@ main {
 .intro-card p {
   max-width: 760px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1rem, 1.7vw, 1.2rem);
   line-height: 1.7;
   color: #4a2f22;
@@ -69,9 +69,8 @@ main {
   overflow: hidden;
   border: 1px solid rgba(24, 32, 25, 0.08);
   border-radius: 20px;
-  border-top: 7px solid #111111;
-  background:
-    linear-gradient(180deg, rgba(255, 252, 244, 0.98), rgba(246, 237, 214, 0.95));
+  border-top: 7px solid #c11f26;
+  background: rgba(250, 244, 225, 0.95);
   box-shadow:
     0 10px 24px rgba(50, 34, 11, 0.1),
     0 2px 8px rgba(50, 34, 11, 0.05);
@@ -144,7 +143,7 @@ main {
 }
 
 .card_conteudo .texto-1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.98rem;
   line-height: 1.65;
   color: #3f3123;

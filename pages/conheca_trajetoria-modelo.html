@@ -48,29 +48,17 @@
     </header>
 
     <main class="trajetoria-main">
-      <section class="trajetoria-hero" id="topo">
-        <div class="hero-content">
-          <p class="hero-label">Mulheres Extraordinárias</p>
-          <h1 id="hero-nome">ANGELA DAVIS</h1>
-          <p id="hero-resumo">
-            Angela Davis é uma importante referência na luta por justiça social,
-            atuando nos direitos civis, no feminismo e no pensamento crítico.
-            Sua trajetória é marcada pela resistência ao racismo e às
-            desigualdades, deixando um legado que inspira movimentos por
-            liberdade e igualdade.
+      <section
+        class="trajetoria-hero"
+        id="topo"
+        style="--hero-image: url('../assets/mulheres/davis.png')"
+      >
+        <blockquote class="hero-frase-destaque">
+          <p>
+            Liberdade se constrói com consciência, coragem e ação coletiva.
           </p>
-          <div class="hero-actions">
-            <a class="card-botao" href="#biografia">Ler biografia</a>
-            <a class="card-botao secondary" href="ver_todas.html">Ver outras</a>
-          </div>
-        </div>
-        <div class="hero-media">
-          <img
-            id="hero-foto"
-            src="../assets/mulheres/davis.png"
-            alt="Imagem de destaque"
-          />
-        </div>
+          <cite class="hero-frase-autora">Angela Davis</cite>
+        </blockquote>
       </section>
 
       <nav class="trajetoria-subnav" aria-label="Navegação por seções">
@@ -135,6 +123,12 @@
           </p>
         </div>
         <div class="resumo-grid">
+          <figure class="biografia-media">
+            <img
+              src="../assets/mulheres/davis.png"
+              alt="Retrato da mulher na seção de biografia"
+            />
+          </figure>
           <div class="resumo-text">
             <p id="biografia-paragrafo1">
               Texto com dados familiares, origens geográficas e educação.
@@ -143,20 +137,6 @@
               Texto sobre engajamentos iniciais, deslocamentos e desafios
               enfrentados.
             </p>
-          </div>
-          <div class="resumo-stats">
-            <article>
-              <span id="stat-ano">Ano</span>
-              <p>Momento destacado</p>
-            </article>
-            <article>
-              <span id="stat-area">Área</span>
-              <p>Campo de atuação</p>
-            </article>
-            <article>
-              <span id="stat-legado">Legado</span>
-              <p>Resultado mais conhecido</p>
-            </article>
           </div>
         </div>
       </section>
@@ -188,6 +168,31 @@
         </div>
       </section>
 
+      <section class="secao-trajetoria secao-destacada" id="extraordinaria">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-star"></i>
+            Por que esta mulher é extraordinária?
+          </h2>
+          <p class="secao-subtitulo">
+            Espaço para destacar qualidades, impacto e singularidade.
+          </p>
+        </div>
+        <div class="resumo-grid">
+          <div class="resumo-text">
+            <p>
+              Texto explicando por que sua trajetória se destaca e como sua
+              atuação contribuiu para transformações sociais, culturais,
+              políticas ou educacionais.
+            </p>
+            <p>
+              Use este espaço para mostrar o que torna essa mulher uma
+              referência e por que seu legado continua relevante no presente.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="secao-trajetoria secao-destacada" id="impacto">
         <div class="secao-header">
           <h2>
@@ -204,20 +209,6 @@
               Texto narrando como o legado inspira movimentos e novas
               lideranças.
             </p>
-          </div>
-          <div class="resumo-stats">
-            <article>
-              <span>Projetos</span>
-              <p>Iniciativas inspiradas pela trajetória</p>
-            </article>
-            <article>
-              <span>Redes</span>
-              <p>Grupos e coletivos conectados</p>
-            </article>
-            <article>
-              <span>Reconhecimento</span>
-              <p>Prêmios e menções</p>
-            </article>
           </div>
         </div>
       </section>

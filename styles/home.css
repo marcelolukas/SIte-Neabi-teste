@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .destaques {
   display: flex;
@@ -15,7 +15,7 @@
   flex: 1 1 320px;
   color: #171512;
   line-height: 1.2;
-  font-family: Roboto, sans-serif;
+  font-family: "Inter", sans-serif;
   margin-left: 0;
   max-width: 60%;
   margin-top: 40px;
@@ -44,7 +44,7 @@
   padding: 13px 32px;
   border-radius: 8px;
   display: inline-block;
-  font-family: Roboto, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
   margin-top: 24px;
@@ -64,8 +64,8 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-  background:
-    linear-gradient(180deg, #111111 0%, #1d1d1d 100%);
+  background: rgba(250, 244, 225, 0.95);
+  border: 1px solid rgba(23, 21, 18, 0.08);
   border-top: 8px solid #c11f26;
   border-radius: 0 0 20px 20px;
   margin-bottom: 20px;
@@ -91,7 +91,7 @@
   display: flex;
   gap: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid rgba(224, 187, 79, 0.18);
+  border-bottom: 1px solid rgba(193, 31, 38, 0.14);
 }
 
 .card-conteudo {
@@ -109,20 +109,20 @@
 }
 .card-conteudo p {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.82);
+  color: #433328;
   line-height: 1.6;
 }
 
 .card-conteudo time {
-  color: #e0bb4f; /* destaque quente */
+  color: #8f131a;
   font-size: 12px;
   align-self: flex-start;
 }
 .card-conteudo h3 {
-  font-family: Roboto;
+  font-family: "Inter", sans-serif;
   font-size: 21px;
   font-weight: 700;
-  color: #f7f0d8;
+  color: #171512;
 }
 
 .card-imagem img {
@@ -137,7 +137,7 @@
   display: flex;
   justify-content: center;
   gap:25px;
-  font-family:Roboto;
+  font-family: "Inter", sans-serif;
    
 }
 .clicado {
