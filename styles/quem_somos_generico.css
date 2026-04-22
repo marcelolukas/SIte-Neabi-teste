@@ -61,7 +61,8 @@ body {
   margin: clamp(82px, 4vw, 48px) auto;
   padding: clamp(32px, 4vw, 64px);
   max-width: 1150px;
-  height: 600px;
+  min-height: 600px;
+  height: auto;
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center; /* vertical */
@@ -165,6 +166,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .contato-rodape {
+    min-height: 0;
+  }
+
   .contato-rodape__texto p {
     max-width: 100%;
   }

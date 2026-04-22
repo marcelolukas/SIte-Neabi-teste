@@ -117,15 +117,16 @@ body {
   width: min(100%, 1200px);
   border-radius: 16px;
   border-top: #000000 4px solid;
-  height: 620px;
+  min-height: 620px;
+  height: auto;
   box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
 }
 
 .carol-container {
   max-width: 1200px;
-  margin-top: 0 auto;
-  width: 80%;
-  text-align: justify ;
+  margin: 0 auto;
+  width: 100%;
+  text-align: justify;
 }
 
 .carol-apresentacao .carol-container {
@@ -227,7 +228,7 @@ body {
 /* TEXTO LATERAL */
 
 .carol-texto {
-  width: 140%;
+  width: 100%;
   max-width: 740px;
 }
 .carol-texto h2 {
@@ -265,7 +266,7 @@ body {
   border-radius: 6px;
   padding: 10px;
   text-align: center;
-  width: 275px;
+  width: min(100%, 275px);
   margin: 0 auto;
 }
 
@@ -609,6 +610,11 @@ body {
     gap: 30px;
   }
 
+  .carol-apresentacao {
+    min-height: 0;
+    margin: 24px 16px;
+  }
+
   .carol-texto h2 {
     font-size: 1.6rem;
     color: black;
@@ -721,7 +727,8 @@ body {
   }
 
   .carol-apresentacao {
-    padding: 40px 12px;
+    padding: 24px 12px;
+    margin: 16px 12px;
   }
 
   .carol-texto h2 {

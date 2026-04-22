@@ -204,6 +204,10 @@ select {
     filter var(--transition-fast);
 }
 
+.botao-home-mobile {
+  display: none;
+}
+
 .botao-contato::before {
   content: "";
   position: absolute;
@@ -274,57 +278,122 @@ select {
 
 @media (max-width: 900px) {
   .cabecalho {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 12px;
+  }
+
+  .identidade_do_site {
+    grid-column: 1;
+    justify-content: flex-start;
   }
 
   .navegacao {
-    order: 3;
+    grid-column: 1 / -1;
     width: 100%;
-    flex-basis: 100%;
+    flex-basis: auto;
+    justify-content: flex-start;
   }
 
   .menu-pagina-inicial {
     width: 100%;
+    justify-content: flex-start;
+    gap: 10px 14px;
+  }
+
+  .botao-contato,
+  .botao-home-mobile {
+    grid-column: 3;
+    justify-self: end;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 640px) {
   .cabecalho {
-    justify-content: center;
-    gap: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
     padding-top: 14px;
     padding-bottom: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .cabecalho::-webkit-scrollbar {
+    display: none;
   }
 
   .identidade_do_site {
-    width: 100%;
-    justify-content: center;
+    width: auto;
+    justify-content: flex-start;
+    flex: 0 1 auto;
+    grid-column: auto;
+  }
+
+  .logo_do_site {
+    max-height: 36px;
+  }
+
+  .navegacao {
+    grid-column: auto;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    overflow: visible;
+    min-width: 0;
   }
 
   .menu-pagina-inicial {
-    gap: 10px;
+    width: max-content;
+    flex-wrap: nowrap;
+    gap: 8px;
     font-size: 0.88rem;
+    justify-content: flex-start;
   }
 
   .navegacao a {
-    width: 100%;
+    width: auto;
+    white-space: nowrap;
+    min-height: 40px;
+    padding: 8px 10px;
   }
 
   .botao-contato {
-    margin-left: 0;
-    min-width: auto;
-    min-height: 42px;
-    padding: 8px 14px 10px;
-    color: inherit;
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
+    display: none;
   }
 
   .botao-contato::before,
   .botao-contato::after,
   .icone-punho {
+    display: none;
+  }
+
+  .botao-home-mobile {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 8px 12px;
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  .botao-home-mobile:hover,
+  .botao-home-mobile:focus-visible {
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  .menu-pagina-inicial li:first-child {
     display: none;
   }
 
