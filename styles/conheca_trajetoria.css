@@ -238,7 +238,6 @@ body {
 .extraordinaria-media {
   margin: 0;
   align-self: start;
-  aspect-ratio: 3 / 4;
   border-radius: 22px;
   overflow: hidden;
   background: transparent;
@@ -249,7 +248,7 @@ body {
 
 .extraordinaria-media img {
   width: 100%;
-  height: 100%;
+  height: 10%;
   display: block;
   object-fit: cover;
   object-position: center top;
@@ -381,7 +380,7 @@ body {
   margin: 0;
   border-radius: 16px;
   overflow: hidden;
-  border: 3px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   background: transparent;
 }
 
@@ -514,6 +513,16 @@ body.lightbox-aberto {
     border-color 180ms ease;
 }
 
+.referencia-item a {
+  color: red;
+  text-decoration: none;
+}
+
+.referencia-item a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 .mulher-card:hover {
   transform: translateY(-4px);
   border-color: rgba(15, 107, 55, 0.35);
@@ -545,8 +554,9 @@ body.lightbox-aberto {
   align-items: center;
   justify-content: center;
   align-self: flex-start;
-  margin-top: auto;
-  padding: 10px 16px;
+  margin-top: 10px;
+  width:100%;
+  padding: 5px 3px;
   border-radius: 999px;
   background: linear-gradient(135deg, #0f6b37, #094a26);
   color: #fff;
@@ -562,8 +572,7 @@ body.lightbox-aberto {
 }
 
 .mulher-card-botao:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.04);
+  filter: brightness(1.4);
   box-shadow: 0 12px 24px rgba(15, 107, 55, 0.28);
 }
 
@@ -659,6 +668,7 @@ body.lightbox-aberto {
     background-size: cover;
     opacity: 0.34;
   }
+  
 
   .hero-frase-destaque {
     max-width: 100%;

@@ -1,412 +1,487 @@
 ﻿<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conheça a Trajetoria</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ConheÃ§a a TrajetÃ³ria</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/transicao.css" />
+    <link rel="stylesheet" href="../styles/conheca_trajetoria.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="../styles/global.css" />
-  <link rel="stylesheet" href="../styles/transicao.css" />
-  <link rel="stylesheet" href="../styles/conheca_trajetoria.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+  <body>
+    <div class="div_transicao"></div>
 
-<body>
-  <div class="div_transicao"></div>
-
-  <header class="cabecalho">
-    <div class="identidade_do_site">
-      <img class="logo_do_site" src="../assets/ui/logo_do_site.png" alt="Logo do Site" />
-    </div>
-
-    <nav class="navegacao">
-      <ul class="menu-pagina-inicial">
-        <li><a href="pagina_inicial.html">InÃ­cio</a></li>
-        <li><a href="quem_somos_generico.html">Quem Somos</a></li>
-        <li><a href="ver_todas.html">Mulheres</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-      </ul>
-    </nav>
-
-    <a href="#referencias" class="botao-contato">
-      <span class="texto-botao">Fale Conosco</span>
-      <video class="icone-punho" src="../assets/ui/animacao_punho.webm" muted playsinline preload="auto"></video>
-    </a>
-  </header>
-
-  <main class="trajetoria-main">
-    <section class="trajetoria-hero" id="topo" style="--hero-image: url('../assets/111.png')">
-      <blockquote class="hero-frase-destaque">
-        <p>
-          Quando a mulher negra se movimenta, toda a estrutura da sociedade se movimenta com ela
-        </p>
-        <cite class="hero-frase-autora">Angela Davis</cite>
-
-      </blockquote>
-      <p class="credito-hero">
-        Foto: Funcrunch â€” CC BY-SA 4.0
-      </p>
-    </section>
-
-    <nav class="trajetoria-subnav" aria-label="NavegaÃ§Ã£o por seÃ§Ãµes">
-      <a href="#biografia">Biografia</a>
-      <a href="#timeline">Linha do tempo</a>
-      <a href="#impacto">Legados</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#referencias">ReferÃªncias</a>
-    </nav>
-
-
-
-    <section class="secao-trajetoria" id="biografia">
-      <div class="secao-header">
-        <h2>
-          Um pouco sobre Angela Davis
-        </h2>
-        <p class="secao-subtitulo">
-          TrajetÃ³ria inicial: origens, formaÃ§Ã£o e engajamento social
-        </p>
+    <header class="cabecalho">
+      <div class="identidade_do_site">
+        <img
+          class="logo_do_site"
+          src="../assets/ui/logo_do_site.png"
+          alt="Logo do Site"
+        />
       </div>
-      <div class="resumo-grid">
-        <figure class="biografia-media">
-          <img src="../assets/mulheres/davis_per.png" alt="Retrato de Angela Davis na seÃ§Ã£o de biografia" />
-          <p class="legenda-foto"> Foto: Funcrunch â€” Wikimedia Commons
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-              (CC BY-SA 4.0)
-            </a>
+
+      <nav class="navegacao">
+        <ul class="menu-pagina-inicial">
+          <li><a href="pagina_inicial.html">Inicío</a></li>
+          <li><a href="quem_somos_generico.html">Quem Somos</a></li>
+          <li><a href="ver_todas.html">Mulheres</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+      </nav>
+
+      <a href="#referencias" class="botao-contato">
+        <span class="texto-botao">Fale Conosco</span>
+        <video
+          class="icone-punho"
+          src="../assets/ui/animacao_punho.webm"
+          muted
+          playsinline
+          preload="auto"
+        ></video>
+      </a>
+    </header>
+
+    <main class="trajetoria-main">
+      <section
+        class="trajetoria-hero"
+        id="topo"
+        style="--hero-image: url(&quot;../assets/111.png&quot;)"
+      >
+        <blockquote class="hero-frase-destaque">
+          <p>
+            Quando a mulher negra se movimenta, toda a estrutura da sociedade se
+            movimenta com ela
           </p>
-        </figure>
-        <div class="resumo-text">
-          <p id="biografia-paragrafo1">
-            Filha de professores e ativistas, Angela Davis cresceu em uma
-            famÃ­lia que valorizava profundamente a educaÃ§Ã£o, o pensamento
-            crÃ­tico e o engajamento polÃ­tico. De origem afro-americana, sua
-            infÃ¢ncia foi marcada por um ambiente de resistÃªncia e
-            conscientizaÃ§Ã£o, o que influenciou diretamente sua formaÃ§Ã£o
-            intelectual. Desde cedo, destacou-se nos estudos, ingressando em
-            instituiÃ§Ãµes de ensino de prestÃ­gio, onde aprofundou seus
-            conhecimentos em filosofia e ciÃªncias sociais. AlÃ©m disso, teve
-            experiÃªncias acadÃªmicas no exterior, que ampliaram sua visÃ£o de
-            mundo e contribuÃ­ram para o desenvolvimento de uma perspectiva
-            crÃ­tica sobre questÃµes sociais e polÃ­ticas.
-          </p>
-          <p id="biografia-paragrafo2">
-            Nos seus primeiros engajamentos, Angela Davis aproximou-se de
-            movimentos estudantis e organizaÃ§Ãµes polÃ­ticas voltadas Ã  luta
-            contra o racismo e as desigualdades sociais. Ao longo de sua
-            trajetÃ³ria, realizou deslocamentos para diferentes cidades e
-            paÃ­ses, buscando tanto formaÃ§Ã£o acadÃªmica quanto participaÃ§Ã£o
-            ativa em causas sociais. Nesse percurso, enfrentou intensas
-            dificuldades, como vigilÃ¢ncia constante, perseguiÃ§Ãµes polÃ­ticas e
-            repressÃ£o por suas ideias e posicionamentos. Esses desafios, longe
-            de enfraquecÃª-la, fortaleceram seu compromisso com a justiÃ§a
-            social e os direitos humanos, consolidando sua atuaÃ§Ã£o como uma
-            das principais vozes crÃ­ticas de seu tempo.
+          <cite class="hero-frase-autora">Angela Davis</cite>
+        </blockquote>
+        <p class="credito-hero">
+          Foto: Funcrunch, via - Wikimedia Commons — CC BY-SA 4.0
+        </p>
+      </section>
+
+      <nav class="trajetoria-subnav" aria-label="NavegaÃ§Ã£o por seÃ§Ãµes">
+        <a href="#biografia">Biografia</a>
+        <a href="#timeline">Linha do tempo</a>
+        <a href="#impacto">Legados</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#referencias">Referências</a>
+      </nav>
+
+      <section class="secao-trajetoria" id="biografia">
+        <div class="secao-header">
+          <h2>Um pouco sobre Angela Davis</h2>
+          <p class="secao-subtitulo">
+            Trajetoria inicial: origens, formação e engajamento social
           </p>
         </div>
-      </div>
-    </section>
+        <div class="resumo-grid">
+          <figure class="biografia-media">
+            <img
+              src="../assets/mulheres/davis_per.png"
+              alt="Retrato de Angela Davis na seÃ§Ã£o de biografia"
+            />
+            <p class="legenda-foto">
+              Foto: Funcrunch, via - Wikimedia Commons
+              <a
+                href="https://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank"
+              >
+                (CC BY-SA 4.0)
+              </a>
+            </p>
+          </figure>
+          <div class="resumo-text">
+            <p id="biografia-paragrafo1">
+              Filha de professores e ativistas, Angela Davis cresceu em uma
+              família que valorizava profundamente a educação, o pensamento
+              crítico e o engajamento político. De origem afro-americana, sua
+              infância foi marcada por um ambiente de resistência e
+              conscientização, o que influenciou diretamente sua formação
+              intelectual. Desde cedo, destacou-se nos estudos, ingressando em
+              instituições de ensino de prestígio, onde aprofundou seus
+              conhecimentos em filosofia e ciências sociais. Além disso, teve
+              experiências acadêmicas no exterior, que ampliaram sua visão de
+              mundo e contribuíram para o desenvolvimento de uma perspectiva
+              crítica sobre questões sociais e políticas.
+            </p>
+            <p id="biografia-paragrafo2">
+              Nos seus primeiros engajamentos, Angela Davis aproximou-se de
+              movimentos estudantis e organizações políticas voltadas à luta
+              contra o racismo e as desigualdades sociais. Ao longo de sua
+              trajetória, realizou deslocamentos para diferentes cidades e
+              países, buscando tanto formação acadêmica quanto participação
+              ativa em causas sociais. Nesse percurso, enfrentou intensas
+              dificuldades, como vigilância constante, perseguições políticas e
+              repressão por suas ideias e posicionamentos. Esses desafios, longe
+              de enfraquecê-la, fortaleceram seu compromisso com a justiça
+              social e os direitos humanos, consolidando sua atuação como uma
+              das principais vozes críticas de seu tempo.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="secao-trajetoria timeline-section" id="timeline">
-      <div class="secao-header">
-        <h2>
-          <i class="fas fa-hourglass-start"></i>
-          Linha do tempo
-        </h2>
-      </div>
-      <div class="timeline-grid">
-        <article>
-          <h3>1944</h3>
-          <p>
-            Nasce em Birmingham, Alabama (EUA), em um contexto marcado pela
-            segregaÃ§Ã£o racial. Filha de professores e ativistas, cresce em um
-            ambiente que valoriza profundamente a educaÃ§Ã£o, a consciÃªncia
-            polÃ­tica e o engajamento social desde a infÃ¢ncia.
-          </p>
-        </article>
-        <article>
-          <h3>Anos 1960</h3>
-          <p>
-            Ingressa na Brandeis University, onde estuda filosofia. Nesse
-            perÃ­odo, entra em contato com importantes correntes de pensamento
-            crÃ­tico, desenvolvendo uma visÃ£o mais aprofundada sobre racismo,
-            desigualdade social e estruturas de poder.
-          </p>
-        </article>
-        <article>
-          <h3>1963â€“1965</h3>
-          <p>
-            Realiza intercÃ¢mbio na Europa, passando pela FranÃ§a e pela
-            Alemanha, onde estuda na Universidade de Frankfurt. Nesse perÃ­odo,
-            aprofunda seus estudos em teoria crÃ­tica e marxismo, ampliando sua
-            formaÃ§Ã£o intelectual.
-          </p>
-        </article>
-        <article>
-          <h3>Final dos anos 1960</h3>
-          <p>
-            Retorna aos Estados Unidos e continua sua formaÃ§Ã£o na University
-            of California, San Diego, onde faz pÃ³s-graduaÃ§Ã£o em filosofia.
-            Torna-se professora universitÃ¡ria e passa a ganhar destaque por
-            suas ideias.
-          </p>
-        </article>
+      <section class="secao-trajetoria timeline-section" id="timeline">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-hourglass-start"></i>
+            Linha do tempo
+          </h2>
+        </div>
+        <div class="timeline-grid">
+          <article>
+            <h3>1944</h3>
+            <p>
+              Nasce em Birmingham, Alabama (EUA), em um contexto marcado pela
+              segregação racial. Filha de professores e ativistas, cresce em
+              um ambiente que valoriza profundamente a educação, a
+              consciência política e o engajamento social desde a infância.
+            </p>
+          </article>
+          <article>
+            <h3>Anos 1960</h3>
+            <p>
+              Ingressa na Brandeis University, onde estuda filosofia. Nesse
+              período, entra em contato com importantes correntes de pensamento
+              crítico, desenvolvendo uma visão mais aprofundada sobre racismo,
+              desigualdade social e estruturas de poder.
+            </p>
+          </article>
+          <article>
+            <h3>1963-1965</h3>
+            <p>
+              Realiza intercâmbio na Europa, passando pela França e pela
+              Alemanha, onde estuda na Universidade de Frankfurt. Nesse
+              período, aprofunda seus estudos em teoria crítica e marxismo,
+              ampliando sua formação intelectual.
+            </p>
+          </article>
+          <article>
+            <h3>Final dos anos 1960</h3>
+            <p>
+              Retorna aos Estados Unidos e continua sua formação na University
+              of California, San Diego, onde faz pós-graduação em filosofia.
+              Torna-se professora universitária e passa a ganhar destaque por
+              suas ideias.
+            </p>
+          </article>
 
-        <article>
-          <h3>1969â€“1972</h3>
-          <p>
-            Leciona na UCLA, Ã© afastada por suas ligaÃ§Ãµes polÃ­ticas e,
-            posteriormente, acusada em um caso judicial. Ã‰ presa por cerca de
-            18 meses, perÃ­odo em que surge uma mobilizaÃ§Ã£o internacional por
-            sua libertaÃ§Ã£o. Em 1972, Ã© julgada e absolvida, tornando-se
-            sÃ­mbolo da luta contra injustiÃ§as sociais.
-          </p>
-        </article>
+          <article>
+            <h3>1969-1972</h3>
+            <p>
+              Leciona na UCLA, é afastada por suas ligações políticas e,
+              posteriormente, acusada em um caso judicial. É presa por cerca de
+              18 meses, período em que surge uma mobilização internacional
+              por sua libertação. Em 1972, é julgada e absolvida, tornando-se
+              símbolo da luta contra injustiças sociais.
+            </p>
+          </article>
 
-        <article>
-          <h3>DÃ©cadas de 1970â€“1980</h3>
-          <p>
-            Retoma sua carreira acadÃªmica e passa a lecionar em universidades,
-            consolidando-se como professora e intelectual. Publica obras
-            importantes sobre racismo, desigualdade social e sistema
-            prisional, alÃ©m de atuar em movimentos sociais.
-          </p>
-        </article>
+          <article>
+            <h3>Décadas de 1970–1980</h3>
+            <p>
+              Retoma sua carreira acadêmica e passa a lecionar em
+              universidades, consolidando-se como professora e intelectual.
+              Publica obras importantes sobre racismo, desigualdade social e
+              sistema prisional, alé além de atuar em movimentos sociais.
+            </p>
+          </article>
 
-        <article>
-          <h3>DÃ©cadas de 1990â€“2000</h3>
-          <p>
-            Ã‰ acusada de envolvimento em um caso judicial relacionado a uma
-            tentativa de resgate de presos. Por conta disso, entra para a
-            lista dos mais procurados do FBI, tornando-se uma figura central
-            em debates sobre justiÃ§a e perseguiÃ§Ã£o polÃ­tica.
-          </p>
-        </article>
+          <article>
+            <h3>Décadas de 1990–2000</h3>
+            <p>
+              É acusada de envolvimento em um caso judicial relacionado a uma
+              tentativa de resgate de presos. Por conta disso, entra para a
+              lista dos mais procurados do FBI, tornando-se uma figura central
+              em debates sobre justiça e perseguição política.
+            </p>
+          </article>
 
-        <article>
-          <h3>DÃ©cadas de 1990â€“2000</h3>
-          <p>
-            Permanece ativa em debates globais sobre racismo, feminismo e
-            direitos humanos. Continua participando de conferÃªncias,
-            escrevendo livros e sendo uma referÃªncia na luta por igualdade
-            social.
-          </p>
-        </article>
-      </div>
-    </section>
+          <article>
+            <h3>Décadas de 1990–2000</h3>
+            <p>
+              Permanece ativa em debates globais sobre racismo, feminismo e
+              direitos humanos. Continua participando de conferências,
+              escrevendo livros e sendo uma referência na luta por igualdade
+              social.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <section class="secao-trajetoria secao-destacada" id="extraordinaria">
-      <div class="secao-header">
-        <h2>
-          <i class="fas fa-star"></i>
-          Por que Angela Davis Ã© uma mulher extraordinÃ¡ria?
-        </h2>
-        <p class="secao-subtitulo">
-          Coragem intelectual, compromisso polÃ­tico e impacto coletivo.
-        </p>
-      </div>
-      <div class="resumo-grid">
-        <figure class="extraordinaria-media">
-          <img src="../assets/angela_davis_fbi.png"
-            alt="Angela Davis em registro histÃ³rico na seÃ§Ã£o mulher extraordinÃ¡ria" />
-          <p class="legenda-foto">Registro histÃ³rico que reforÃ§a sua forÃ§a simbÃ³lica e polÃ­tica.</p>
-        </figure>
-        <div class="resumo-text">
-          <p>
-            Angela Davis Ã© uma mulher extraordinÃ¡ria porque transformou sua
-            trajetÃ³ria pessoal em uma luta coletiva por justiÃ§a, liberdade e
-            igualdade. Sua atuaÃ§Ã£o uniu pensamento crÃ­tico, produÃ§Ã£o
-            acadÃªmica e engajamento polÃ­tico, tornando sua voz referÃªncia em
-            debates sobre racismo, feminismo, direitos civis e sistema
-            prisional.
-          </p>
-          <p>
-            Mesmo diante de perseguiÃ§Ãµes e tentativas de silenciamento,
-            manteve firme seu compromisso com a transformaÃ§Ã£o social. Seu
-            legado permanece vivo porque inspira novas geraÃ§Ãµes a enfrentar
-            desigualdades, defender direitos humanos e construir formas mais
-            justas de viver em sociedade.
+      <section class="secao-trajetoria secao-destacada" id="extraordinaria">
+        <div class="secao-header">
+          <h2>Por que Angela Davis é uma mulher extraordinária?</h2>
+          <p class="secao-subtitulo">
+            Coragem intelectual, compromisso político e impacto coletivo.
           </p>
         </div>
-      </div>
-    </section>
+        <div class="resumo-grid">
+          <figure class="extraordinaria-media">
+            <img
+              src="../assets\angela_davis_retrato.png"
+              alt="Angela Davis em registro histórico na seção mulher extraordinária"
+            />
+            <p class="legenda-foto">
+              Foto: Philippe Halsman, 1974 — via Wikimedia Commons (domínio
+              público)
+            </p>
+          </figure>
+          <div class="resumo-text">
+            <p>
+              Angela Davis é uma mulher extraordinária porque transformou sua
+              trajetória pessoal em uma luta coletiva por justiça, liberdade e
+              igualdade. Sua atuação articula pensamento crítico, produção
+              acadêmica e engajamento político de forma única, tornando sua voz
+              uma referência fundamental nos debates sobre racismo, feminismo,
+              direitos civis e o sistema prisional. Ao longo de sua vida,
+              enfrentou perseguições, prisão e tentativas de silenciamento, sem
+              jamais abandonar seu compromisso com a transformação social. Sua
+              resistência não apenas desafiou estruturas de poder, mas também
+              ampliou o alcance das lutas por dignidade e equidade. Seu legado
+              permanece vivo porque inspira novas gerações a questionar
+              injustiças, enfrentar desigualdades e defender os direitos
+              humanos. Mais do que uma figura histórica, Angela Davis se tornou
+              um símbolo contínuo de resistência, consciência crítica e
+              possibilidade de mudança em busca de uma sociedade mais justa.
+            </p>
+            <p>
+              Mesmo diante de perseguições, prisão e tentativas de
+              silenciamento, manteve-se firme em seu compromisso com a
+              transformação social. Sua trajetória revela não apenas
+              resistência, mas também coragem e coerência diante das injustiças.
+              Seu legado permanece vivo ao inspirar novas gerações a questionar
+              estruturas de poder, enfrentar desigualdades e defender os
+              direitos humanos. Mais do que memória histórica, sua luta continua
+              sendo um convite à construção de uma sociedade mais justa,
+              consciente e igualitária.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="secao-trajetoria secao-destacada" id="impacto">
-      <div class="secao-header">
-        <h2>
-          <i class="fas fa-heart"></i>
-          Legados
-        </h2>
-        <p class="secao-subtitulo">
-          InfluÃªncia sobre arte, polÃ­tica, educaÃ§Ã£o e comunidades.
-        </p>
-      </div>
-      <div class="resumo-grid">
-        <div class="resumo-text">
-          <p id="impacto-texto">
-            O legado de Angela Davis continua a inspirar movimentos sociais e
-            novas lideranÃ§as ao redor do mundo por sua defesa da justiÃ§a, da
-            igualdade e da transformaÃ§Ã£o social. Sua trajetÃ³ria evidencia que
-            o pensamento crÃ­tico, aliado Ã  aÃ§Ã£o polÃ­tica, pode questionar e
-            transformar estruturas profundamente enraizadas, como o racismo e
-            as desigualdades sociais. Ao longo das dÃ©cadas, suas ideias
-            fortaleceram lutas por direitos civis, influenciaram o feminismo
-            negro e ampliaram debates sobre o sistema prisional e seus
-            impactos. Sua atuaÃ§Ã£o tambÃ©m destaca a importÃ¢ncia da educaÃ§Ã£o e
-            da organizaÃ§Ã£o coletiva como caminhos para a mudanÃ§a social. Hoje,
-            jovens ativistas encontram em Angela Davis uma referÃªncia de
-            coragem intelectual e compromisso com causas coletivas. Seu legado
-            incentiva novas geraÃ§Ãµes a se posicionarem de forma crÃ­tica e a
-            contribuÃ­rem para a construÃ§Ã£o de uma sociedade mais justa e
-            inclusiva. AlÃ©m disso, sua produÃ§Ã£o acadÃªmica e sua atuaÃ§Ã£o
-            pÃºblica reforÃ§am a importÃ¢ncia do diÃ¡logo entre teoria e prÃ¡tica,
-            incentivando a reflexÃ£o crÃ­tica e o engajamento social. Dessa
-            forma, seu pensamento segue atual e relevante, contribuindo para a
-            construÃ§Ã£o de uma sociedade mais consciente, democrÃ¡tica e
-            comprometida com os direitos humanos.
+      <section class="secao-trajetoria secao-destacada" id="impacto">
+        <div class="secao-header">
+          <h2>Legados</h2>
+          <p class="secao-subtitulo">
+            Influência sobre arte, política, educação e comunidades.
           </p>
         </div>
-      </div>
-    </section>
-
-    <section class="secao-trajetoria galeria-section" id="galeria">
-      <div class="secao-header">
-        <h2>
-          <i class="fas fa-image"></i>
-          Galeria
-        </h2>
-        <p class="secao-subtitulo">Fotos e documentos representativos.</p>
-      </div>
-      <div class="galeria-grid">
-        <figure>
-          <img src="../assets/angela_davis_cartaz_fbi.png" alt="Registro 1" />
-          <figcaption>
-            <p class="galeria-descricao">Cartaz histÃ³rico do perÃ­odo em que Angela Davis foi perseguida politicamente.</p>
-            <p class="galeria-credito">CrÃ©dito: FBI / domÃ­nio pÃºblico</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="../assets/angela_davis_fbi.png" alt="Registro 2" />
-          <figcaption>
-            <p class="galeria-descricao">Imagem histÃ³rica que reforÃ§a a dimensÃ£o pÃºblica e simbÃ³lica de sua trajetÃ³ria.</p>
-            <p class="galeria-credito">CrÃ©dito: acervo histÃ³rico, ajustar fonte especÃ­fica se necessÃ¡rio</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="../assets/IMG_0260 (1).jpg" alt="Registro 3" />
-          <figcaption>
-            <p class="galeria-descricao">Atividade cultural e educativa que dialoga com a permanÃªncia de seu pensamento.</p>
-            <p class="galeria-credito">CrÃ©dito: acervo do projeto / NEABI</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="secao-trajetoria" id="referencias">
-      <div class="secao-header">
-        <h2>
-          <i class="fas fa-link"></i>
-          ReferÃªncias
-        </h2>
-        <p class="secao-subtitulo">
-          Livros, artigos e documentos histÃ³ricos.
-        </p>
-      </div>
-      <div class="referencias-list">
-        <article class="referencia-item">
-          <h3>ReferÃªncia 1</h3>
-          <p>DescriÃ§Ã£o breve e link.</p>
-        </article>
-        <article class="referencia-item">
-          <h3>ReferÃªncia 2</h3>
-          <p>DescriÃ§Ã£o breve e link.</p>
-        </article>
-        <article class="referencia-item">
-          <h3>ReferÃªncia 3</h3>
-          <p>DescriÃ§Ã£o breve e link.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="secao-trajetoria secao-relacionados">
-      <div class="secao-header">
-        <h2>
-          <i class="fas fa-users"></i>
-          Outras mulheres
-        </h2>
-        <p class="secao-subtitulo">
-          ConheÃ§a outras trajetÃ³rias marcantes da luta por justiÃ§a e
-          transformaÃ§Ã£o social.
-        </p>
-      </div>
-      <div class="mulheres-grid" id="veja-tambem">
-        <article class="mulher-card">
-          <div class="mulher-card-imagem">
-            <img src="../assets/mulheres/rosa.png" alt="Retrato de Rosa Parks" />
+        <div class="resumo-grid">
+          <div class="resumo-text">
+            <p id="impacto-texto">
+              O legado de Angela Davis continua a inspirar movimentos sociais e
+              novas lideranças ao redor do mundo por sua defesa da justiça, da
+              igualdade e da transformação social. Sua trajetória demonstra que
+              o pensamento crítico, aliado à ação política, tem o poder de
+              questionar e transformar estruturas profundamente enraizadas, como
+              o racismo e as desigualdades sociais. Ao longo das décadas, suas
+              ideias fortaleceram as lutas por direitos civis, influenciaram o
+              feminismo negro e ampliaram os debates sobre o sistema prisional e
+              seus impactos na sociedade. Sua atuação também evidencia a
+              importância da educação e da organização coletiva como caminhos
+              essenciais para a mudança social. Hoje, jovens ativistas encontram
+              em Angela Davis uma referência de coragem intelectual, resistência
+              e compromisso com causas coletivas. Seu legado incentiva novas
+              gerações a se posicionarem de forma crítica e ativa, contribuindo
+              para a construção de uma sociedade mais justa e inclusiva. Além
+              disso, sua produção acadêmica e sua atuação pública reforçam a
+              importância do diálogo entre teoria e prática, estimulando a
+              reflexão crítica e o engajamento social. Dessa forma, seu
+              pensamento permanece atual e relevante, contribuindo para a
+              construção de uma sociedade mais consciente, democrática e
+              comprometida com os direitos humanos.
+            </p>
           </div>
-          <h3 class="mulher-card-nome">Rosa Parks</h3>
-          <p class="mulher-card-desc">
-            SÃ­mbolo da luta contra a segregaÃ§Ã£o racial nos Estados Unidos e
-            referÃªncia mundial em coragem civil.
-          </p>
-          <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
-        </article>
-        <article class="mulher-card">
-          <div class="mulher-card-imagem">
-            <img src="../assets/mulheres/dandara.png" alt="RepresentaÃ§Ã£o de Dandara dos Palmares" />
-          </div>
-          <h3 class="mulher-card-nome">Dandara dos Palmares</h3>
-          <p class="mulher-card-desc">
-            Estrategista quilombola cuja resistÃªncia ajudou a marcar a luta
-            negra por liberdade no Brasil.
-          </p>
-          <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
-        </article>
-        <article class="mulher-card">
-          <div class="mulher-card-imagem">
-            <img src="../assets/mulheres/leila.png" alt="Retrato de LÃ©lia Gonzalez" />
-          </div>
-          <h3 class="mulher-card-nome">LÃ©lia Gonzalez</h3>
-          <p class="mulher-card-desc">
-            Intelectual fundamental para os debates sobre feminismo negro,
-            cultura e desigualdade racial no Brasil.
-          </p>
-          <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
-        </article>
-        <article class="mulher-card">
-          <div class="mulher-card-imagem">
-            <img src="../assets/mulheres/joenia.png" alt="Retrato de JoÃªnia Wapichana" />
-          </div>
-          <h3 class="mulher-card-nome">JoÃªnia Wapichana</h3>
-          <p class="mulher-card-desc">
-            LideranÃ§a indÃ­gena e jurista que ampliou a presenÃ§a dos povos
-            originÃ¡rios nos espaÃ§os de decisÃ£o.
-          </p>
-          <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="secao-cta">
-      <div class="cta-box">
-        <h3>Duplique este modelo</h3>
-        <p>Substitua textos, imagens e dados para cada mulher do site.</p>
-        <a href="ver_todas.html" class="cta-button">
-          <i class="fas fa-arrow-right"></i>
-          Ver outras trajetÃ³rias
-        </a>
-      </div>
-    </section>
-  </main>
+      <section class="secao-trajetoria galeria-section" id="galeria">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-image"></i>
+            Galeria
+          </h2>
+          <p class="secao-subtitulo">Fotos e documentos representativos.</p>
+        </div>
+        <div class="galeria-grid">
+          <figure>
+            <img src="../assets/angela_davis_cartaz_fbi.png" alt="Registro 1" />
+            <figcaption>
+              <p class="galeria-descricao">
+                Cartaz histórico do período em que Angela Davis foi procurada
+                pelo FBI, símbolo da perseguição política nos Estados Unidos na
+                década de 1970.
+              </p>
+              <p class="galeria-credito">
+                Foto: Federal Bureau of Investigation, 1970 — via Wikimedia
+                Commons (domínio público)
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/conferencia_angela_davis.png"
+              alt="Registro 2"
+            />
+            <figcaption>
+              <p class="galeria-descricao">
+                Conferência do Comitê para Libertar Angela Davis no Centro de
+                Educação Marxista, Nova York, em 1971, com Louise Thompson
+                Patterson, Fania Davis e Felicia Coward.
+              </p>
+              <p class="galeria-credito">
+                Foto: Bill Andrews, 1971 — via Wikimedia Commons (domínio
+                público)
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/angela_davis_protesto.png" alt="Registro 3" />
+            <figcaption>
+              <p class="galeria-descricao">
+                Angela Davis participa de manifestação em apoio aos Soledad
+                Brothers, destacando sua atuação na luta por justiça social.
+              </p>
+              <p class="galeria-credito">
+                Foto: Ray Graham, 1970 — via Wikimedia Commons (CC BY 4.0)
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-  <script src="../scripts/transicao.js"></script>
-  <script src="../scripts/animacoes.js"></script>
-  <script src="../scripts/galeria_lightbox.js"></script>
-  <script src="../scripts/dados_perfil.js"></script>
-  <script src="../scripts/perfil.js"></script>
-</body>
+      <section class="secao-trajetoria" id="referencias">
+        <div class="secao-header">
+          <h2><i class="fa-solid fa-book-bookmark"> </i> Referências</h2>
+          <p class="secao-subtitulo">
+            Livros, artigos e documentos histÃ³ricos.
+          </p>
+        </div>
+        <div class="referencias-list">
+          <article class="referencia-item">
+            <h3>Livro Mulheres, Raça e Classe, de Angela Davis</h3>
+            <p>
+              Análise sobre racismo, feminismo e desigualdades sociais. Link:
+              <a
+                href="https://www.amazon.com.br/Mulheres-Ra%C3%A7a-Classe-Angela-Davis/dp/8575595032"
+                target="_blank"
+                >https://www.amazon.com.br/Mulheres-Ra%C3%A7a-Classe-Angela-Davis/dp/8575595032</a
+              >
+            </p>
+          </article>
+          <article class="referencia-item">
+            <h3>Encyclopaedia Britannica</h3>
+            <p>
+              biografia completa com informações sobre sua vida, militância,
+              prisão e legado. Link:
+              <a
+                href="https://www.britannica.com/biography/Angela-Davis"
+                target="_blank"
+                >https://www.britannica.com/biography/Angela-Davis</a
+              >
+            </p>
+          </article>
+          <article class="referencia-item">
+            <h3>
+              Smithsonian National Museum of African American History and
+              Culture
+            </h3>
+            <p>
+              Acervo histórico com materiais e contexto sobre sua atuação e
+              impacto social. Link:
+              <a
+                href="https://nmaahc.si.edu/explore/stories/angela-davis"
+                target="_blank"
+                >https://nmaahc.si.edu/explore/stories/angela-davis</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
 
+      <section class="secao-trajetoria secao-relacionados">
+        <div class="secao-header">
+          <h2>
+            <i class="fas fa-users"></i>
+            Outras mulheres
+          </h2>
+          <p class="secao-subtitulo">
+            Conheça outras trajetórias marcantes da luta por justiça e
+            transformação social.
+          </p>
+        </div>
+        <div class="mulheres-grid" id="veja-tambem">
+          <article class="mulher-card">
+            <div class="mulher-card-imagem">
+              <img
+                src="../assets/mulheres/rosa.png"
+                alt="Retrato de Rosa Parks"
+              />
+            </div>
+            <h3 class="mulher-card-nome">Rosa Parks</h3>
+            <p class="mulher-card-desc">
+              Si­mbolo da luta contra a segregação racial nos Estados Unidos e
+              referência mundial em coragem civil.
+            </p>
+            <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
+          </article>
+          <article class="mulher-card">
+            <div class="mulher-card-imagem">
+              <img
+                src="../assets/mulheres/dandara.png"
+                alt="Representação de Dandara dos Palmares"
+              />
+            </div>
+            <h3 class="mulher-card-nome">Dandara dos Palmares</h3>
+            <p class="mulher-card-desc">
+              Estrategista quilombola cuja resistÃªncia ajudou a marcar a luta
+              negra por liberdade no Brasil lorem.
+            </p>
+            <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
+          </article>
+          <article class="mulher-card">
+            <div class="mulher-card-imagem">
+              <img
+                src="../assets/mulheres/leila.png"
+                alt="Retrato de LÃ©lia Gonzalez"
+              />
+            </div>
+            <h3 class="mulher-card-nome">LÃ©lia Gonzalez</h3>
+            <p class="mulher-card-desc">
+              Intelectual fundamental para os debates sobre feminismo negro,
+              cultura e desigualdade racial no Brasil.
+            </p>
+            <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
+          </article>
+          <article class="mulher-card">
+            <div class="mulher-card-imagem">
+              <img
+                src="../assets/mulheres/joenia.png"
+                alt="Retrato de JoÃªnia Wapichana"
+              />
+            </div>
+            <h3 class="mulher-card-nome">JoÃªnia Wapichana</h3>
+            <p class="mulher-card-desc">
+              LideranÃ§a indÃ­gena e jurista que ampliou a presenÃ§a dos povos
+              originÃ¡rios nos espaÃ§os de decisÃ£o.
+            </p>
+            <a class="mulher-card-botao" href="ver_todas.html">Saiba mais</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="../scripts/transicao.js"></script>
+    <script src="../scripts/animacoes.js"></script>
+    <script src="../scripts/galeria_lightbox.js"></script>
+    <script src="../scripts/dados_perfil.js"></script>
+    <script src="../scripts/perfil.js"></script>
+  </body>
 </html>
-
-

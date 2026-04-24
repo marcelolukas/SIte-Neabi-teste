@@ -116,7 +116,6 @@ body {
   background: rgba(250, 244, 225, 0.95);
   width: min(100%, 1200px);
   border-radius: 16px;
-  border-top: #000000 4px solid;
   min-height: 620px;
   height: auto;
   box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
@@ -174,8 +173,8 @@ body {
 .carol-redes-sociais-title {
   margin: 0px;
   padding: 0px;
-  color: whitesmoke;
-  font-size: 16px;
+  color: black;
+  font-size: 17px;
 }
 .social-link {
   display: flex;
@@ -304,11 +303,8 @@ body {
 .carol-impacto {
   padding: 60px 20px;
   background: linear-gradient(
-    135deg,
-    rgba(193, 31, 38, 0.08),
-    rgba(15, 107, 55, 0.08)
+    
   );
-  border-top: 1px solid rgba(193, 31, 38, 0.15);
   background-color: whitesmoke;
   margin: 95px;
 }
@@ -403,10 +399,7 @@ body {
    SEÇÃO VALORES
    ======================================== */
 
-.carol-valores {
-  padding: 60px 20px;
-  border-top: 1px solid rgba(193, 31, 38, 0.15);
-}
+
 
 .valores-lista {
   display: grid;
